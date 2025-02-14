@@ -1,0 +1,13 @@
+paeio
+transformers
+torch
+langsmith
+langgraph
+langchain
+langchain_chroma
+langchain-community
+langchain-huggingface
+langchainhub
+faiss-cpu
+streamlit
+-e .
