@@ -11,6 +11,6 @@ TODAY = datetime.today().date().strftime("%Y-%m-%d")
 def get_root_dir():
     cur_dir = Path(__file__).resolve().parent
 
-    while cur_dir.name != 'assistant':
+    while cur_dir.name != 'rag_implementations':
         cur_dir = cur_dir.parent
     return str(cur_dir)

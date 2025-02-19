@@ -1,11 +1,11 @@
 from langchain_huggingface import HuggingFaceEndpoint, ChatHuggingFace
 from langchain_openai import ChatOpenAI
-from assistant.config import power_chat
+from rag.config import power_chat
 
 
 def load_llm_chat(model, temperature=0.1, max_new_tokens=1024):
     if model == power_chat:
-        chat = ChatOpenAI(model=model, temperature=temperature, max_new_tokens=max_new_tokens)
+        chat = ChatOpenAI(model=model, temperature=temperature, max_tokens=max_new_tokens)
     else:
         llm = HuggingFaceEndpoint(
             repo_id=model,
